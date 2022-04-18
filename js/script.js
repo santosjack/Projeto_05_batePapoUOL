@@ -49,20 +49,20 @@ function renderMessages(response) {
     item => {
       if (item.type === 'status') {
         el.innerHTML += `<div class="status">
-                          <span>(${item.time}) </span>
-                          <span><strong>${item.from}</strong> ${item.text}</span>
+                          <span>(${item.time})</span>
+                          <span><strong> ${item.from}</strong> ${item.text}</span>
                         </div>`
       }
       if (item.type === 'message') {
         el.innerHTML += `<div class="message">
-                          <span>(${item.time}) </span>
-                          <span><strong>${item.from}</strong> para <strong>${item.to}</strong>: ${item.text}</span>
+                          <span>(${item.time})</span>
+                          <span><strong> ${item.from}</strong> para <strong>${item.to}</strong>: ${item.text}</span>
                         </div>`
       }
       if (item.type === 'private_message') {
         el.innerHTML += `<div class="private-message">
-                            <span>(${item.time}) </span>
-                            <span><strong>${item.from}</strong> reservadamente para <strong>${item.to}</strong>: ${item.text}</span>
+                            <span>(${item.time})</span>
+                            <span><strong> ${item.from}</strong> reservadamente para <strong>${item.to}</strong>: ${item.text}</span>
                           </div>`
       }
     }
